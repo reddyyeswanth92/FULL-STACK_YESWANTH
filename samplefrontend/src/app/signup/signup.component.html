@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form [formGroup]="signupForm" (ngSubmit)="signup()">
+                <div class="form-group">
+                    <label for="" class="form-label">username</label>
+                    <input type="text" placeholder="username" class="form-control" formControlName="username">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">name</label>
+                    <input type="text" placeholder="name" class="form-control" formControlName="name">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">password</label>
+                    <input type="password" placeholder="password"  class="form-control"formControlName="password">
+                </div>
+                <div class="form-group"> 
+                    <label for="" class="form-label">email</label>
+                    <input type="email" placeholder="enter email"  class="form-control"formControlName="email">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">phone</label>
+                    <input type="number" placeholder="enter phonenumber" class="form-control" formControlName="phone">
+                </div><br>
+                <div class="form-group">
+                <button type="submit" class="btn btn-secondary">signup</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

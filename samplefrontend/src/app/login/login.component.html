@@ -1,0 +1,20 @@
+<div class="conatiner">
+    <div class="row">
+        <div class="col-md-8">
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="form-group">
+                        <label for="">username</label>
+                        <input type="text" class="form-control" formControlName="username" placeholder="username">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="">password</label>
+                        <input type="password"class="form-control" formControlName="password" placeholder="password">
+                    </div><br>
+                    <div class="form-group">
+                        <button class="btn btn-success " type="submit">login</button>
+                        <button class="btn btn-danger ms-4" type="">cancel</button>
+                    </div>
+                </form>
+        </div>
+    </div>
+</div>
